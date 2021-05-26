@@ -1,4 +1,21 @@
 <?php
+
+$dbconf = [];
+
+$DATABASE_URL = getenv("DATABASE_URL");
+
+if (!empty($DATABASE_URL)) {
+  $db = parse_url($DATABASE_URL);
+  $db["path"] = ltrim($db["path"], "/");
+  $dbconf = [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'pgsql:host=' . $db['host'] . ';port=' . $db['port'] . ';dbname=' . $db['path'] ,
+    'username' => $db['user'],
+    'password' => $db['pass'],
+    'charset' => 'utf8'
+  ];
+};
+
 return [
     'name' => 'My first yii2 project',
     'aliases' => [
@@ -7,13 +24,7 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
-      //  'db' => [
-      //       'class' => 'yii\db\Connection',
-      //       'dsn' => 'postgresql:host=localhost;dbname=yii2advanced',
-      //       'username' => 'root',
-      //       'password' => '',
-      //       'charset' => 'utf8',
-      //   ],
+        'db' => $dbconf,
         'mail' => [
           'class' => 'zyx\phpmailer\Mailer',
           'viewPath' => '@common/mail',
