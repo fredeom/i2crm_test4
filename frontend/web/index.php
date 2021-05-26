@@ -1,17 +1,18 @@
 <?php
 
-if (!defined('DATABASE_URL')) {
-  define('DATABASE_URL', 'postgres://sms:Rjvgjn123@localhost/sms');
+$DATABASE_URL = getenv("DATABASE_URL");
+
+if (empty($DATABASE_URL)) {
+  $DATABASE_URL = 'postgres://sms:Rjvgjn123@localhost/sms';
 }
 
-$db = parse_url(DATABASE_URL);
-echo "<pre>";
-var_dump($db);
-
+$db = parse_url($DATABASE_URL);
 $db["path"] = ltrim($db["path"], "/");
 
+echo "<pre>";
 var_dump($db);
 echo "</pre>";
+
 exit(0);
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
