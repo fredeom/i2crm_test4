@@ -1,5 +1,19 @@
 <?php
 
+if (!defined('DATABASE_URL')) {
+  define('DATABASE_URL', 'postgres://sms:Rjvgjn123@localhost/sms');
+}
+
+$db = parse_url(DATABASE_URL);
+echo "<pre>";
+var_dump($db);
+
+$db["path"] = ltrim($db["path"], "/");
+
+var_dump($db);
+echo "</pre>";
+exit(0);
+
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 

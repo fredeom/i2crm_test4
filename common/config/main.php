@@ -7,6 +7,13 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
+      //  'db' => [
+      //       'class' => 'yii\db\Connection',
+      //       'dsn' => 'postgresql:host=localhost;dbname=yii2advanced',
+      //       'username' => 'root',
+      //       'password' => '',
+      //       'charset' => 'utf8',
+      //   ],
         'mail' => [
           'class' => 'zyx\phpmailer\Mailer',
           'viewPath' => '@common/mail',
