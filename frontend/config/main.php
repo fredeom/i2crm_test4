@@ -35,6 +35,7 @@ return [
         ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
+            'cookieValidationKey' => 'VERY SECRET COOKIE FROM main-local.php',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
