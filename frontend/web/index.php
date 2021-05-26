@@ -16,7 +16,7 @@ $config = yii\helpers\ArrayHelper::merge(
     //require __DIR__ . '/../config/main-local.php'
   );
 
-echo "<h1>from frontend/web before Application run</h1>";
-exit(0);
+// echo "<h1>from frontend/web before Application run</h1>";
+// exit(0);
 
 (new yii\web\Application($config))->run();
