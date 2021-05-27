@@ -33026,3 +33026,2635 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1622096253.2359
     'REQUEST_TIME' => 1622096253
 ]
+2021-05-27 09:18:11 [127.0.0.1][-][-][error][Error] Error: Class "frontend\widgeets\MessageFeedWidget" not found in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/site/index.php:33
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(64): yii\base\Controller->render()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#8 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#12 {main}
+2021-05-27 09:18:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '47952'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622107091.1774
+    'REQUEST_TIME' => 1622107091
+]
+2021-05-27 09:25:38 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $messages in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php:13
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php(13): yii\base\ErrorHandler->handleError()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(141): frontend\widgets\MessageContainerWidget->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/site/index.php(47): yii\base\Widget::widget()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(63): yii\base\Controller->render()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#13 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#14 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#15 {main}
+2021-05-27 09:25:38 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48176'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622107538.4474
+    'REQUEST_TIME' => 1622107538
+]
+2021-05-27 09:33:31 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $param in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/views/message_container.php:4
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/views/message_container.php(4): yii\base\ErrorHandler->handleError()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(237): yii\base\View->render()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php(17): yii\base\Widget->render()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(141): frontend\widgets\MessageContainerWidget->run()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/site/index.php(47): yii\base\Widget::widget()
+#8 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(63): yii\base\Controller->render()
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#16 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#17 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#18 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#19 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#20 {main}
+2021-05-27 09:33:31 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48318'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622108011.7447
+    'REQUEST_TIME' => 1622108011
+]
+2021-05-27 09:33:41 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $messages in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/views/message_container.php:2
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/views/message_container.php(2): yii\base\ErrorHandler->handleError()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(237): yii\base\View->render()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php(17): yii\base\Widget->render()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(141): frontend\widgets\MessageContainerWidget->run()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/site/index.php(47): yii\base\Widget::widget()
+#8 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(63): yii\base\Controller->render()
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#16 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#17 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#18 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#19 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#20 {main}
+2021-05-27 09:33:41 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48318'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622108021.7846
+    'REQUEST_TIME' => 1622108021
+]
+2021-05-27 09:34:04 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][Error] Error: Undefined constant "frontend\widgets\messages" in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php:17
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(141): frontend\widgets\MessageContainerWidget->run()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/site/index.php(47): yii\base\Widget::widget()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(63): yii\base\Controller->render()
+#7 [internal function]: frontend\controllers\SiteController->actionIndex()
+#8 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#14 {main}
+2021-05-27 09:34:04 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48318'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622108044.5473
+    'REQUEST_TIME' => 1622108044
+]
+2021-05-27 09:34:22 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][Error] Error: Class "Html" not found in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/views/message_container.php:10
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(237): yii\base\View->render()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php(18): yii\base\Widget->render()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(141): frontend\widgets\MessageContainerWidget->run()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/site/index.php(47): yii\base\Widget::widget()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#8 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(63): yii\base\Controller->render()
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#15 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#16 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#17 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#18 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#19 {main}
+2021-05-27 09:34:22 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48318'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622108062.0697
+    'REQUEST_TIME' => 1622108062
+]
+2021-05-27 09:37:35 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $layout in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php:63
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/SiteController.php(63): yii\base\ErrorHandler->handleError()
+#1 [internal function]: frontend\controllers\SiteController->actionIndex()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 09:37:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=some%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48456'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622108255.806
+    'REQUEST_TIME' => 1622108255
+]
+2021-05-27 09:59:24 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $messages in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php:26
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php(26): yii\base\ErrorHandler->handleError()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/BaseYii.php(293): include('...')
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/admin/marked.php(28): yii\BaseYii::autoload()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php(17): yii\base\Controller->render()
+#8 [internal function]: frontend\controllers\AdminController->actionMarked()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#13 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#14 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#15 {main}
+2021-05-27 09:59:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/marked'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49284'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmarked'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmarked'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622109564.0834
+    'REQUEST_TIME' => 1622109564
+]
+2021-05-27 10:13:47 [127.0.0.1][-][-][error][Error] Error: Class "frontend\controllers\Yii" not found in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php:14
+Stack trace:
+#0 [internal function]: frontend\controllers\AdminController->actionUsers()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#7 {main}
+2021-05-27 10:13:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49786'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fusers'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fusers'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622110427.6882
+    'REQUEST_TIME' => 1622110427
+]
+2021-05-27 10:14:31 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][Error] Error: Attempt to assign property "role" on bool in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php:36
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php(29): frontend\controllers\AdminController->promote()
+#1 [internal function]: frontend\controllers\AdminController->actionPromoteUser()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 10:14:31 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/promote-user'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fusers'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49786'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpromote-user&id=7'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fpromote-user&id=7'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622110471.2634
+    'REQUEST_TIME' => 1622110471
+]
+2021-05-27 10:18:08 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][Error] Error: Attempt to assign property "role" on bool in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php:36
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php(29): frontend\controllers\AdminController->promote()
+#1 [internal function]: frontend\controllers\AdminController->actionPromoteUser()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 10:17:22 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/promote-user'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fusers'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49878'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpromote-user&id=7'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fpromote-user&id=7'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622110641.9777
+    'REQUEST_TIME' => 1622110641
+]
+2021-05-27 10:18:16 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/index in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:18:16 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fusers'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49878'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622110696.0094
+    'REQUEST_TIME' => 1622110696
+]
+2021-05-27 10:19:02 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/index in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:19:02 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fusers'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49878'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622110742.8389
+    'REQUEST_TIME' => 1622110742
+]
+2021-05-27 10:27:17 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $backUrl in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php:22
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/widgets/MessageContainerWidget.php(22): yii\base\ErrorHandler->handleError()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Widget.php(141): frontend\widgets\MessageContainerWidget->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/views/admin/marked.php(28): yii\base\Widget::widget()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(348): require('...')
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php(46): yii\base\Controller->render()
+#8 [internal function]: frontend\controllers\AdminController->actionMarked()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#13 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#14 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#15 {main}
+2021-05-27 10:27:17 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/marked'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50254'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmarked'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmarked'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622111237.1605
+    'REQUEST_TIME' => 1622111237
+]
+2021-05-27 10:32:06 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/index in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:32:06 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50372'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622111526.5214
+    'REQUEST_TIME' => 1622111526
+]
+2021-05-27 10:32:13 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/index in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:32:13 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50372'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622111533.7279
+    'REQUEST_TIME' => 1622111533
+]
+2021-05-27 10:40:11 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected token "}", expecting ";" in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php:19
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(643): class_exists()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(602): yii\base\Module->createControllerByID()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Module->createController()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#7 {main}
+2021-05-27 10:40:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/marked'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50700'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmarked'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmarked'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622112011.2251
+    'REQUEST_TIME' => 1622112011
+]
+2021-05-27 10:40:59 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/mark-correct in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:40:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-correct'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZR-k7P2QA2y5KmQucr6zNLUiDuhWKMKIDRAgesvH6QUnUtSqzqVwHMpFAkpK8fx-5VBLoABml-l5W0UD-piqUA=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '385'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------39178960164291911061125880397'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZR-k7P2QA2y5KmQucr6zNLUiDuhWKMKIDRAgesvH6QUnUtSqzqVwHMpFAkpK8fx-5VBLoABml-l5W0UD-piqUA=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50700'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-correct'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '385'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------39178960164291911061125880397'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-correct'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622112059.2048
+    'REQUEST_TIME' => 1622112059
+]
+2021-05-27 10:41:10 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/mark-correct in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:41:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-correct'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZR-k7P2QA2y5KmQucr6zNLUiDuhWKMKIDRAgesvH6QUnUtSqzqVwHMpFAkpK8fx-5VBLoABml-l5W0UD-piqUA=='
+    'idmessage' => '36'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------246318670242637427841625626097'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZR-k7P2QA2y5KmQucr6zNLUiDuhWKMKIDRAgesvH6QUnUtSqzqVwHMpFAkpK8fx-5VBLoABml-l5W0UD-piqUA=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50700'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-correct'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------246318670242637427841625626097'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-correct'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622112070.284
+    'REQUEST_TIME' => 1622112070
+]
+2021-05-27 10:41:45 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/mark-correct in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:41:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-correct'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'gAv6VNFK7qpN_UCrCAKmSgI6z1yfqt2abaVmR89dmR3CRooS4n-d2j6SJs8wTekAUkiKFMnkiPsZ7gM-_gLaSA=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '385'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------86596920015761759461816495609'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'gAv6VNFK7qpN_UCrCAKmSgI6z1yfqt2abaVmR89dmR3CRooS4n-d2j6SJs8wTekAUkiKFMnkiPsZ7gM-_gLaSA=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50700'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-correct'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '385'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------86596920015761759461816495609'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-correct'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622112105.8466
+    'REQUEST_TIME' => 1622112105
+]
+2021-05-27 10:42:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/mark-correct in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:42:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-correct'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'NPSdI18Df2aNImzSvt0AFpff4GyyWk7mC9XTbODizsp2ue1lbDYMFv5NCraGkk9cx62lJOQUG4d_nrYV0b2Nnw=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------369535367227741566731666796381'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'NPSdI18Df2aNImzSvt0AFpff4GyyWk7mC9XTbODizsp2ue1lbDYMFv5NCraGkk9cx62lJOQUG4d_nrYV0b2Nnw=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50700'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-correct'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------369535367227741566731666796381'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-correct'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622112154.4664
+    'REQUEST_TIME' => 1622112154
+]
+2021-05-27 11:04:25 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected token "}", expecting ";" in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/controllers/AdminController.php:16
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(643): class_exists()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(602): yii\base\Module->createControllerByID()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Module->createController()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#7 {main}
+2021-05-27 11:04:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/marked-message'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51676'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmarked-message'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmarked-message'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113448.0692
+    'REQUEST_TIME' => 1622113448
+]
+2021-05-27 11:04:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/mark-correct in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 10:44:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-correct'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'NPSdI18Df2aNImzSvt0AFpff4GyyWk7mC9XTbODizsp2ue1lbDYMFv5NCraGkk9cx62lJOQUG4d_nrYV0b2Nnw=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '385'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------36697736674134257004269618050'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'NPSdI18Df2aNImzSvt0AFpff4GyyWk7mC9XTbODizsp2ue1lbDYMFv5NCraGkk9cx62lJOQUG4d_nrYV0b2Nnw=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50846'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-correct'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '385'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------36697736674134257004269618050'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-correct'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622112248.4007
+    'REQUEST_TIME' => 1622112248
+]
+2021-05-27 11:05:08 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/mark-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:05:01 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51692'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmark-message'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113500.9017
+    'REQUEST_TIME' => 1622113500
+]
+2021-05-27 11:05:10 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/marked-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:04:32 [127.0.0.1][10][k68djtqa0c5k58sif88rceon0q][info][application] $_GET = [
+    'r' => 'admin/marked-message'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+    '__authKey' => 'd1WRvKF2C427TODZerR4adUzhbKuHBZ2'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51684'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmarked-message'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmarked-message'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113472.8745
+    'REQUEST_TIME' => 1622113472
+]
+2021-05-27 11:07:24 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: frontend\actions\MarkMessageAction::backUrl in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Component.php:210
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/BaseYii.php(558): yii\base\Component->__set()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Action.php(62): yii\base\BaseObject->__construct()
+#3 [internal function]: yii\base\Action->__construct()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(251): yii\BaseYii::createObject()
+#8 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\Controller->createAction()
+#9 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#10 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#11 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#12 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#13 {main}
+2021-05-27 11:07:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51734'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmark-message'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113644.0217
+    'REQUEST_TIME' => 1622113644
+]
+2021-05-27 11:07:54 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $backUrl in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/actions/MarkMessageAction.php:11
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/actions/MarkMessageAction.php(11): yii\base\ErrorHandler->handleError()
+#1 [internal function]: frontend\actions\MarkMessageAction->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 11:07:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51734'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmark-message'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113674.9088
+    'REQUEST_TIME' => 1622113674
+]
+2021-05-27 11:08:00 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Response content must not be an array. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Response.php:1113
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Response.php(344): yii\web\Response->prepare()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#3 {main}
+2021-05-27 11:08:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51734'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fmark-message'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113680.7713
+    'REQUEST_TIME' => 1622113680
+]
+2021-05-27 11:13:18 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: frontend\actions\MarkMessageAction::redirect() in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Component.php:301
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/actions/MarkMessageAction.php(15): yii\base\Component->__call()
+#1 [internal function]: frontend\actions\MarkMessageAction->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 11:13:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+    'isCorrect' => '1'
+    'idmessage' => '35'
+]
+
+$_POST = [
+    '_csrf-frontend' => '5vmg4y_MWVnAwEzPiauyd30filJcLQIqKbhwGZN8AbqktNClHPkqKbOvKqux5P09LW3PGgpjV0td8xVgoiNC7w=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------176215985716942188063392468854'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => '5vmg4y_MWVnAwEzPiauyd30filJcLQIqKbhwGZN8AbqktNClHPkqKbOvKqux5P09LW3PGgpjV0td8xVgoiNC7w=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51908'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------176215985716942188063392468854'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622113998.5144
+    'REQUEST_TIME' => 1622113998
+]
+2021-05-27 11:14:04 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: frontend\actions\MarkMessageAction::redirect() in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Component.php:301
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/actions/MarkMessageAction.php(15): yii\base\Component->__call()
+#1 [internal function]: frontend\actions\MarkMessageAction->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 11:14:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+    'isCorrect' => '1'
+    'idmessage' => '35'
+]
+
+$_POST = [
+    '_csrf-frontend' => '_phGpgvfZt6_hhi9j2qr3YucCMFJ6Fn3al9bgi62kfu81TbgOOoVrszpftm3JeSX2-5NiR-mDJYeFD77H-nSrg=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------323119011521029217811683802269'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => '_phGpgvfZt6_hhi9j2qr3YucCMFJ6Fn3al9bgi62kfu81TbgOOoVrszpftm3JeSX2-5NiR-mDJYeFD77H-nSrg=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51908'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------323119011521029217811683802269'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114044.3491
+    'REQUEST_TIME' => 1622114044
+]
+2021-05-27 11:18:03 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: frontend\actions\MarkMessageAction::redirect() in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Component.php:301
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/actions/MarkMessageAction.php(15): yii\base\Component->__call()
+#1 [internal function]: frontend\actions\MarkMessageAction->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+2021-05-27 11:18:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+    'isCorrect' => '1'
+    'idmessage' => '35'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'vZJIijVIIBcY3o9vLr24JycTtraelQslI5v-tavMeH7_3zjMBn1TZ2ux6QsW8vdtd2Hz_sjbXkRX0JvMmpM7Kw=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '385'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------70368649232500912381127452258'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'vZJIijVIIBcY3o9vLr24JycTtraelQslI5v-tavMeH7_3zjMBn1TZ2ux6QsW8vdtd2Hz_sjbXkRX0JvMmpM7Kw=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52050'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '385'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------70368649232500912381127452258'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114283.2785
+    'REQUEST_TIME' => 1622114283
+]
+2021-05-27 11:20:44 [127.0.0.1][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Uncaught yii\base\UnknownMethodException: Calling unknown method: frontend\actions\MarkMessageAction::redirect() in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Component.php:301
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/actions/MarkMessageAction.php(15): yii\base\Component->__call()
+#1 [internal function]: frontend\actions\MarkMessageAction->run()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#8 {main}
+  thrown in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Component.php:301
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-05-27 11:18:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/mark-message'
+    'isCorrect' => '1'
+    'idmessage' => '35'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'vZJIijVIIBcY3o9vLr24JycTtraelQslI5v-tavMeH7_3zjMBn1TZ2ux6QsW8vdtd2Hz_sjbXkRX0JvMmpM7Kw=='
+    'idmessage' => '35'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=admin%2Fmarked'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------198967541340082979721272099426'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'vZJIijVIIBcY3o9vLr24JycTtraelQslI5v-tavMeH7_3zjMBn1TZ2ux6QsW8vdtd2Hz_sjbXkRX0JvMmpM7Kw=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52050'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------198967541340082979721272099426'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fmark-message&isCorrect=1&idmessage=35'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114288.647
+    'REQUEST_TIME' => 1622114288
+]
+2021-05-27 11:23:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/mark-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:23:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/mark-message'
+    'shouldMark' => '1'
+    'idmessage' => '27'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'idmessage' => '27'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '385'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------69912465524607225091425708675'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52230'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '385'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------69912465524607225091425708675'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114627.6401
+    'REQUEST_TIME' => 1622114627
+]
+2021-05-27 11:23:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/mark-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:23:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/mark-message'
+    'shouldMark' => '0'
+    'idmessage' => '27'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'idmessage' => '27'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '382'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8164786940323962324110137717'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52230'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fmark-message&shouldMark=0&idmessage=27'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '382'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8164786940323962324110137717'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fmark-message&shouldMark=0&idmessage=27'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114629.7399
+    'REQUEST_TIME' => 1622114629
+]
+2021-05-27 11:23:55 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/mark-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:23:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/mark-message'
+    'shouldMark' => '1'
+    'idmessage' => '27'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'idmessage' => '27'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------338965227432493465881790476847'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52230'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------338965227432493465881790476847'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114635.1145
+    'REQUEST_TIME' => 1622114635
+]
+2021-05-27 11:23:57 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/mark-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:23:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/mark-message'
+    'shouldMark' => '1'
+    'idmessage' => '27'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'idmessage' => '27'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '382'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------3843163196631243638968592952'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52230'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '382'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------3843163196631243638968592952'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114637.9375
+    'REQUEST_TIME' => 1622114637
+]
+2021-05-27 11:24:11 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/mark-message in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Controller.php:152
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#2 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#3 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-27 11:24:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/mark-message'
+    'shouldMark' => '1'
+    'idmessage' => '27'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'idmessage' => '27'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'k68djtqa0c5k58sif88rceon0q'
+    '_csrf-frontend' => 'def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BMpF35spsofd8OOJPrEHVNUatKey1_CU\";}'
+    '_identity-frontend' => '3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[10,\"d1WRvKF2C427TODZerR4adUzhbKuHBZ2\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-frontend=k68djtqa0c5k58sif88rceon0q; _csrf-frontend=def594c8b73c6bfac78c528089f8f4f5454d3ade337439c04c001a348c281cdda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BMpF35spsofd8OOJPrEHVNUatKey1_CU%22%3B%7D; _identity-frontend=3f8dcf04f53309c47ed2aafd93c7480d0f795552e56fac716cca064609ff98baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22d1WRvKF2C427TODZerR4adUzhbKuHBZ2%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://i2crm_test4/index.php?r=site%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://i2crm_test4'
+    'HTTP_CONTENT_LENGTH' => '388'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------119780581924652133201605981980'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_CSRF_TOKEN' => 'ZRlA422VQzIlCjhd0KB7Q6JCfnwrAmGPfMpT_WK4fz8nVDClXqAwQlZlXjno7zQJ8jA7NH1MNO4IgTaEU-c8ag=='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_HOST' => 'i2crm_test4'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'i2crm_test4'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52230'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '388'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------119780581924652133201605981980'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fmark-message&shouldMark=1&idmessage=27'
+    'SCRIPT_FILENAME' => '/home/sms/slash/tmp/web/skillbox/php/yii2/i2crm/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622114651.9095
+    'REQUEST_TIME' => 1622114651
+]

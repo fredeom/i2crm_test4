@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\Pjax;
+use frontend\widgets\MessageContainerWidget;
 
 $this->title = 'My Yii Application';
 
@@ -29,6 +30,7 @@ $this->registerCss($css, ["type" => "text/css"], "mystyle" );
 
     <div class="body-content">
 
+
         <?php Pjax::begin(['enablePushState' => false]); ?>
 
         <?= Html::beginForm(['site/send-message'], 'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
@@ -42,32 +44,7 @@ $this->registerCss($css, ["type" => "text/css"], "mystyle" );
             </div>
         <?= Html::endForm() ?>
 
-        <?php foreach ($messages as $message): ?>
-          <?php if (!$message->mark || \common\models\User::findOne(\Yii::$app->user->id)?->isAdmin()): ?>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div style="display:flex; flex-flow: row nowrap; justify-content: flex-start; align-items:flex-start;">
-                      <div style="padding-right: 10px;"><span class="<?= $message?->user?->isAdmin() ? "admin_mark" : "" ?>"><?= $message?->user?->username ?: "Guest" ?></span></div>
-                      <div style="max-width: 400px; padding-right: 10px;" class="<?= $message->mark ? 'grayed' : '' ?>"><?= $message?->message ?></div>
-                      <?php if (\common\models\User::findOne(\Yii::$app->user->id)?->isAdmin()): ?>
-                        <?= Html::beginForm(['site/mark-incorrect'], 'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
-                          <?= Html::hiddenInput('idmessage', $message->idmessage) ?>
-                          <?= Html::submitButton('Incorrect', ['class' => 'btn btn-sm btn-secondary']); ?>
-                        <?= Html::endForm() ?>
-                        <div>&nbsp;</div>
-                        <?= Html::beginForm(['site/mark-correct'], 'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
-                          <?= Html::hiddenInput('idmessage', $message->idmessage) ?>
-                          <?= Html::submitButton('Correct', ['class' => 'btn btn-sm btn-secondary']); ?>
-                        <?= Html::endForm() ?>
-                      <?php endif; ?>
-                      <div class="info"><?= $message?->idmessage ?>&nbsp;</div>
-                      <div class="info"><?= $message?->fk_author ?>&nbsp;</div>
-                      <div class="info"><?= $message?->mark ?>&nbsp;</div>
-                    </div>
-                </div>
-            </div>
-          <?php endif; ?>
-        <?php endforeach; ?>
+        <?= MessageContainerWidget::widget(['messages' => $messages]) ?>
 
         <?php Pjax::end(); ?>
     </div>

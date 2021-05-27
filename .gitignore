@@ -1,4 +1,4 @@
 vendor/
 .env
 
-frontend/runtime/
+frontend/runtime/**
