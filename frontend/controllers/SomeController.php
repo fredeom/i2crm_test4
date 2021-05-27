@@ -40,7 +40,7 @@ class SomeController extends Controller
         $model->role = $role;
         $model->save();
       }
-      return $this->redirect(["site/index"]);
+      return $this->redirect(["some/index"]);
     }
 
     // /**
