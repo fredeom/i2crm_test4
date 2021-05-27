@@ -14,25 +14,7 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     //'defaultRoute' => '/main',
-    'modules' => [
-      'main' => [
-        'class' => 'app\modules\main\Module'
-      ],
-      'cabinet' => [
-        'class' => 'app\modules\cabinet\Module',
-      ],
-    ],
     'components' => [
-        'view' => [
-          'theme' => [
-            'class' => 'frontend\themes\advert\Theme',
-            'basePath' => '@app/',
-            'baseUrl'  => '@web/',
-          ],
-        ],
-        'common' => [
-          'class' => 'frontend\components\Common'
-        ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
             'cookieValidationKey' => 'VERY SECRET COOKIE FROM main-local.php',
@@ -40,7 +22,7 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'loginUrl' => '/main/main/login',
+            // 'loginUrl' => '/main/main/login',
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
         'session' => [
@@ -59,12 +41,6 @@ return [
         'errorHandler' => [
           'errorAction' => 'site/error'
         ],
-        // 'urlManager' => [
-        //     'enablePrettyUrl' => true,
-        //     'showScriptName' => false,
-        //     'rules' => [
-        //     ],
-        // ],
     ],
     'params' => $params,
 ];

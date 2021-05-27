@@ -1,53 +1,74 @@
 <?php
 
-/* @var $this yii\web\View */
+use yii\helpers\Html;
+use yii\widgets\Pjax;
 
 $this->title = 'My Yii Application';
+
+$css = <<<CSS
+
+.admin_mark {
+  background: #bada55;
+}
+
+.grayed {
+  background: #aaa;
+}
+
+.info {
+  color: lightgray;
+}
+
+CSS;
+
+$this->registerCss($css, ["type" => "text/css"], "mystyle" );
+
 ?>
+
 <div class="site-index">
-
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
 
     <div class="body-content">
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+        <?php Pjax::begin(['enablePushState' => false]); ?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+        <?= Html::beginForm(['site/send-message'], 'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
+            <div class="form-group">
+              <?= Html::submitButton(Yii::$app->user->isGuest ? 'Обновить сообщения' : 'Послать сообщение', ['class' => 'btn btn-lg btn-primary']) ?>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            <br/>
+            <br/>
+            <div class="form-group">
+              <?= Yii::$app->user->isGuest ? "" : Html::textarea('text', '', ['class' => 'form-control']) ?>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+        <?= Html::endForm() ?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+        <?php foreach ($messages as $message): ?>
+          <?php if (!$message->mark || \common\models\User::findOne(\Yii::$app->user->id)?->isAdmin()): ?>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div style="display:flex; flex-flow: row nowrap; justify-content: flex-start; align-items:flex-start;">
+                      <div style="padding-right: 10px;"><span class="<?= $message?->user?->isAdmin() ? "admin_mark" : "" ?>"><?= $message?->user?->username ?: "Guest" ?></span></div>
+                      <div style="max-width: 400px; padding-right: 10px;" class="<?= $message->mark ? 'grayed' : '' ?>"><?= $message?->message ?></div>
+                      <?php if (\common\models\User::findOne(\Yii::$app->user->id)?->isAdmin()): ?>
+                        <?= Html::beginForm(['site/mark-incorrect'], 'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
+                          <?= Html::hiddenInput('idmessage', $message->idmessage) ?>
+                          <?= Html::submitButton('Incorrect', ['class' => 'btn btn-sm btn-secondary']); ?>
+                        <?= Html::endForm() ?>
+                        <div>&nbsp;</div>
+                        <?= Html::beginForm(['site/mark-correct'], 'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
+                          <?= Html::hiddenInput('idmessage', $message->idmessage) ?>
+                          <?= Html::submitButton('Correct', ['class' => 'btn btn-sm btn-secondary']); ?>
+                        <?= Html::endForm() ?>
+                      <?php endif; ?>
+                      <div class="info"><?= $message?->idmessage ?>&nbsp;</div>
+                      <div class="info"><?= $message?->fk_author ?>&nbsp;</div>
+                      <div class="info"><?= $message?->mark ?>&nbsp;</div>
+                    </div>
+                </div>
             </div>
-        </div>
+          <?php endif; ?>
+        <?php endforeach; ?>
 
+        <?php Pjax::end(); ?>
     </div>
 </div>

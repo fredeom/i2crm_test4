@@ -217,4 +217,9 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+
+    public function isAdmin()
+    {
+        return $this->role === 1;
+    }
 }

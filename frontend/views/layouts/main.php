@@ -23,6 +23,8 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
+<?= \frontend\widgets\Alert::widget() ?>
+
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -34,13 +36,15 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
+        if ((\common\models\User::find()->where(['id' => Yii::$app->user->id])->one())?->isAdmin()) {
+          $menuItems[] = ['label' => 'Users', 'url' => ['/admin/users']];
+          $menuItems[] = ['label' => 'Marked Messages', 'url' => ['/admin/marked']];
+        }
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
