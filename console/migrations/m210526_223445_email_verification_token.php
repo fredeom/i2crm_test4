@@ -7,17 +7,11 @@ use yii\db\Migration;
  */
 class m210526_223445_email_verification_token extends Migration
 {
-    /**
-     * {@inheritdoc}
-     */
     public function safeUp()
     {
         $this->addColumn('{{%user}}', 'verification_token', $this->string()->defaultValue(null));
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function safeDown()
     {
         $this->dropColumn('{{%user}}', 'verification_token');

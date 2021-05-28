@@ -41,7 +41,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
-        if ((\common\models\User::find()->where(['id' => Yii::$app->user->id])->one())?->isAdmin()) {
+        if ($this->params['isAdmin'] ?? false) {
           $menuItems[] = ['label' => 'Users', 'url' => ['/admin/users']];
           $menuItems[] = ['label' => 'Marked Messages', 'url' => ['/admin/marked']];
         }

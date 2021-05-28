@@ -34,7 +34,7 @@ class SiteController extends Controller
                         'roles' => ['?'],
                     ],
                     [
-                        'actions' => ['logout'],
+                        'actions' => ['logout', 'send-message'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -64,6 +64,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+      $this->view->params['isAdmin'] = \common\models\User::find()->where(['id' => Yii::$app->user->id])->one()?->isAdmin() ?? false;
       return $this->render('index', [
         'messages' => Message::find()->orderBy('created_at asc')->all(),
         'backUrl' => ['site/index']

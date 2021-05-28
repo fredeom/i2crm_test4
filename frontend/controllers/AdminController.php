@@ -8,6 +8,16 @@ use \common\models\Message;
 
 class AdminController extends \yii\web\Controller
 {
+    public function behaviors()
+    {
+        return [
+            [
+              'class' => \frontend\filters\AdminAuthActionFilter::class,
+              'only' => ['users', 'marked']
+            ]
+        ];
+    }
+
     public function actions()
     {
         return [
@@ -20,6 +30,7 @@ class AdminController extends \yii\web\Controller
 
     public function actionUsers()
     {
+      $this->view->params['isAdmin'] = true;
       $searchModel = new UserSearch();
       $dataProvider = $searchModel->search(\Yii::$app->request->queryParams);
 
@@ -29,20 +40,20 @@ class AdminController extends \yii\web\Controller
       ]);
     }
 
-    public function actionPromoteAdmin()
+    public function actionPromoteAdmin($id)
     {
-      return $this->promote(1);
+      return $this->promote(1, $id);
     }
 
-    public function actionPromoteUser()
+    public function actionPromoteUser($id)
     {
-      return $this->promote(0);
+      return $this->promote(0, $id);
     }
 
-    public function promote($role)
+    public function promote($role, $id)
     {
-        if (\Yii::$app->request->get('id') != \Yii::$app->user?->id) {
-            if (($model = User::findOne(\Yii::$app->request->get('id'))) !== null) {
+        if ($id != \Yii::$app->user?->id) {
+            if (($model = User::findOne($id)) !== null) {
               $model->role = $role;
               $model->save();
             }
@@ -52,6 +63,7 @@ class AdminController extends \yii\web\Controller
 
     public function actionMarked()
     {
+        $this->view->params['isAdmin'] = true;
         return $this->render('marked', [
           'messages' => Message::find()->orderBy('created_at asc')->all(),
           'backUrl' => ['admin/marked']

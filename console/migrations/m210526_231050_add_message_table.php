@@ -7,23 +7,18 @@ use yii\db\Migration;
  */
 class m210526_231050_add_message_table extends Migration
 {
-    /**
-     * {@inheritdoc}
-     */
     public function safeUp()
     {
-      $this->execute("CREATE TABLE \"message\"(
-          fk_author INT NULL REFERENCES \"user\"(id),
-          message TEXT,
-          mark BOOLEAN,
-          created_at BIGINT
-        )");
-      $this->execute("ALTER TABLE \"message\" ADD COLUMN idmessage SERIAL PRIMARY KEY");
+      $this->createTable("{{%message}}", [
+        'idmessage' => $this->primaryKey(),       // "SERIAL PRIMARY KEY",
+        'fk_author' => $this->integer()->null(),  // "INT NULL",
+        'message' => $this->text(),               // 'TEXT',
+        'mark' => $this->boolean(),               // 'BOOLEAN',
+        'created_at' => $this->bigInteger()       // 'BIGINT'
+      ]);
+      $this->addForeignKey('fk1', 'message', 'fk_author', 'user', 'id','CASCADE','CASCADE');
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function safeDown()
     {
         $this->dropTable('{{%message}}');
