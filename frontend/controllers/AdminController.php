@@ -96,10 +96,7 @@ class AdminController extends Controller
         $count = $query->count();
         $pagination = new Pagination(['totalCount' => $count, 'pageSize' => 10, 'route' => 'admin/marked']);
         $pageFromGET = \Yii::$app->request->get('page');
-        $pagination->setPage(
-          \Yii::$app->request->get('per-page') ?
-            $pageFromGET - 1 :
-            (($pageFromGET !== null) && ($pageFromGET <= $pagination->pageCount - 1) ? $pageFromGET : $pagination->pageCount - 1));
+        $pagination->setPage(isset($pageFromGET) ? $pageFromGET - 1 : $pagination->pageCount - 1, true);
         $messages = $query->offset($pagination->offset)->limit($pagination->limit)->all();
         return $this->render('marked', [
           'messages' => $messages,

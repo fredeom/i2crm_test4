@@ -18,7 +18,7 @@ use yii\widgets\LinkPager;
                           \Yii::$app->controller->id . '/mark-message',
                           'shouldMark' => true,
                           'idmessage' => $message->idmessage,
-                          'page' => $pagination->getPage(),
+                          'page' => $pagination->getPage() + 1,
                         ],
                         'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
                     <?= Html::submitButton('Incorrect', ['class' => 'btn btn-sm btn-secondary']); ?>
@@ -30,7 +30,7 @@ use yii\widgets\LinkPager;
                         \Yii::$app->controller->id . '/mark-message',
                         'shouldMark' => false,
                         'idmessage' => $message->idmessage,
-                        'page' => $pagination->getPage(),
+                        'page' => $pagination->getPage() + 1,
                       ],
                       'post', ['data-pjax' => '', 'class' => 'form-inline']); ?>
                   <?= Html::submitButton('Correct', ['class' => 'btn btn-sm btn-secondary']); ?>

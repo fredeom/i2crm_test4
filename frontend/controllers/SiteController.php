@@ -78,7 +78,8 @@ class SiteController extends Controller
       $query = $query->orderBy(['created_at' => SORT_ASC]);
       $count = $query->count();
       $pagination = new Pagination(['totalCount' => $count, 'pageSize' => 10, 'route' => 'site/index']);
-      $pagination->setPage(\Yii::$app->request->get('per-page') ? \Yii::$app->request->get('page') - 1 : (\Yii::$app->request->get('page') ?? $pagination->pageCount - 1));
+      $pageFromGET = \Yii::$app->request->get('page');
+      $pagination->setPage(isset($pageFromGET) ? $pageFromGET - 1 : $pagination->pageCount - 1, true);
       $messages = $query->offset($pagination->offset)->limit($pagination->limit)->all();
       return $this->render('index', [
         'messages' => $messages,
