@@ -2,15 +2,15 @@
 
 namespace frontend\controllers;
 
-use \yii\web\Controller;
-use \yii\filters\VerbFilter;
-use \yii\data\Pagination;
+use yii\web\Controller;
+use yii\filters\VerbFilter;
+use yii\data\Pagination;
 
-use \common\models\User;
-use \common\models\UserSearch;
-use \common\models\Message;
+use common\models\User;
+use common\models\UserSearch;
+use common\models\Message;
 
-use \frontend\filters\AdminAuthActionFilter;
+use frontend\filters\AdminAuthActionFilter;
 
 
 class AdminController extends Controller

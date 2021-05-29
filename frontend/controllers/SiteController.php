@@ -1,25 +1,24 @@
 <?php
+
 namespace frontend\controllers;
 
-use frontend\models\ResendVerificationEmailForm;
-use frontend\models\VerifyEmailForm;
 use Yii;
-use yii\base\InvalidArgumentException;
+
+use yii\base\DynamicModel;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+use yii\web\Response;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
-use \yii\widgets\ActiveForm;
-use \common\models\Message;
-use \yii\web\Response;
-use yii\base\DynamicModel;
 use yii\data\Pagination;
-use \common\models\User;
+use yii\helpers\HtmlPurifier;
+
+use common\models\LoginForm;
+use common\models\Message;
+use common\models\User;
+
+use frontend\models\SignupForm;
+
 
 class SiteController extends Controller
 {
@@ -90,7 +89,7 @@ class SiteController extends Controller
 
     public function actionSendMessage()
     {
-       if (\Yii::$app->request->isAjax && !empty($text = \Yii::$app->request->post("text"))) {
+       if (\Yii::$app->request->isAjax && !empty($text = HtmlPurifier::process(\Yii::$app->request->post("text")))) {
         //\Yii::$app->response->format = Response::FORMAT_JSON;
         $message = new Message();
         $message->message = $text;
