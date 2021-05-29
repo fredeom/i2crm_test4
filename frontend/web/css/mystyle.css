@@ -1,0 +1,27 @@
+.admin_mark {
+  background: #bada55;
+}
+
+.grayed {
+  background: #aaa;
+}
+
+.info {
+  color: lightgray;
+}
+
+.message_wrapper {
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
+.message_wrapper__message_author {
+  padding-right: 10px;
+}
+
+.message_wrapper__message_content {
+  max-width: 400px;
+  padding-right: 10px;
+}

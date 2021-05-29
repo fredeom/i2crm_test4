@@ -23,8 +23,6 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<?= \frontend\widgets\Alert::widget() ?>
-
 <div class="wrap">
     <?php
     NavBar::begin([
