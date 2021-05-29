@@ -2,18 +2,36 @@
 
 namespace frontend\controllers;
 
+use \yii\web\Controller;
+use \yii\filters\VerbFilter;
+use \yii\data\Pagination;
+
 use \common\models\User;
 use \common\models\UserSearch;
 use \common\models\Message;
 
-class AdminController extends \yii\web\Controller
+use \frontend\filters\AdminAuthActionFilter;
+
+
+class AdminController extends Controller
 {
     public function behaviors()
     {
         return [
             [
-              'class' => \frontend\filters\AdminAuthActionFilter::class,
-              'only' => ['users', 'marked']
+              'class' => AdminAuthActionFilter::class,
+              'only' => ['users', 'marked', 'promote-user', 'mark-message']
+            ],
+            [
+              'class' => '\yii\filters\AjaxFilter',
+              'only' => ['promote-user', 'mark-message']
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'promote-user' => ['post'],
+                    'mark-message' => ['post'],
+                ],
             ]
         ];
     }
@@ -23,13 +41,12 @@ class AdminController extends \yii\web\Controller
         return [
             'mark-message' => [
               'class' => \frontend\actions\MarkMessageAction::class,
-              'backUrl' => ['admin/marked']
+              'renderCallback' => 'actionMarked'
             ]
         ];
     }
 
-    public function actionUsers()
-    {
+    public function renderUsers() {
       $this->view->params['isAdmin'] = true;
       $searchModel = new UserSearch();
       $dataProvider = $searchModel->search(\Yii::$app->request->queryParams);
@@ -40,33 +57,54 @@ class AdminController extends \yii\web\Controller
       ]);
     }
 
-    public function actionPromoteAdmin($id)
+    public function actionUsers()
     {
-      return $this->promote(1, $id);
+      return $this->renderUsers();
     }
 
-    public function actionPromoteUser($id)
+    public function actionPromoteUser()
     {
-      return $this->promote(0, $id);
-    }
+        $role = \Yii::$app->request->post('role');
+        $iduser = \Yii::$app->request->post('iduser');
 
-    public function promote($role, $id)
-    {
-        if ($id != \Yii::$app->user?->id) {
-            if (($model = User::findOne($id)) !== null) {
+        $promoteModel = \yii\base\DynamicModel::validateData(compact('role', 'iduser'), [
+          [['role', 'iduser'], 'required'],
+          ['role', 'integer', 'max' => 1, 'min' => 0],
+          ['iduser', 'integer']
+        ]);
+
+        if ($iduser == \Yii::$app->user?->id) {
+            $promoteModel->addError('iduser', "You have admin role. Keep up with it");
+        }
+        if (!$promoteModel->hasErrors()) {
+            if (($model = User::findOne($iduser)) !== null) {
               $model->role = $role;
               $model->save();
             }
+        } else {
+            foreach ($promoteModel->getErrors() as $error) {
+                \Yii::$app->session->setFlash('error', $error);
+            }
         }
-        return $this->redirect(["admin/users"]);
+        return $this->renderUsers();
     }
 
     public function actionMarked()
     {
         $this->view->params['isAdmin'] = true;
+        $query = Message::find()->where(['mark' => 1])->orderBy(['created_at' => SORT_ASC]);
+        $count = $query->count();
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize' => 10, 'route' => 'admin/marked']);
+        $pageFromGET = \Yii::$app->request->get('page');
+        $pagination->setPage(
+          \Yii::$app->request->get('per-page') ?
+            $pageFromGET - 1 :
+            (($pageFromGET !== null) && ($pageFromGET <= $pagination->pageCount - 1) ? $pageFromGET : $pagination->pageCount - 1));
+        $messages = $query->offset($pagination->offset)->limit($pagination->limit)->all();
         return $this->render('marked', [
-          'messages' => Message::find()->orderBy('created_at asc')->all(),
-          'backUrl' => ['admin/marked']
+          'messages' => $messages,
+          'isAdmin' => true,
+          'pagination' => $pagination
         ]);
     }
 }

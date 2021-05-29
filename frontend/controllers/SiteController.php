@@ -18,6 +18,8 @@ use \yii\widgets\ActiveForm;
 use \common\models\Message;
 use \yii\web\Response;
 use yii\base\DynamicModel;
+use yii\data\Pagination;
+use \common\models\User;
 
 class SiteController extends Controller
 {
@@ -44,6 +46,8 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'send-message' => ['post'],
+                    'mark-message' => ['post'],
                 ],
             ]
         ];
@@ -57,24 +61,36 @@ class SiteController extends Controller
             ],
             'mark-message' => [
               'class' => \frontend\actions\MarkMessageAction::class,
-              'backUrl' => ['site/index']
+              'renderCallback' => 'actionIndex'
             ]
         ];
     }
 
     public function actionIndex()
     {
-      $this->view->params['isAdmin'] = \common\models\User::find()->where(['id' => Yii::$app->user->id])->one()?->isAdmin() ?? false;
+      $this->view->params['isAdmin'] = User::find()->where(['id' => Yii::$app->user->id])->one()?->isAdmin() ?? false;
+
+      $isAdmin = User::findOne(\Yii::$app->user->id)?->isAdmin() ?? false;
+      $query = Message::find();
+      if (!$isAdmin) {
+        $query = $query->where(['mark' => 0]);
+      }
+      $query = $query->orderBy(['created_at' => SORT_ASC]);
+      $count = $query->count();
+      $pagination = new Pagination(['totalCount' => $count, 'pageSize' => 10, 'route' => 'site/index']);
+      $pagination->setPage(\Yii::$app->request->get('per-page') ? \Yii::$app->request->get('page') - 1 : (\Yii::$app->request->get('page') ?? $pagination->pageCount - 1));
+      $messages = $query->offset($pagination->offset)->limit($pagination->limit)->all();
       return $this->render('index', [
-        'messages' => Message::find()->orderBy('created_at asc')->all(),
-        'backUrl' => ['site/index']
+        'messages' => $messages,
+        'isAdmin' => $isAdmin,
+        'pagination' => $pagination,
       ]);
     }
 
     public function actionSendMessage()
     {
        if (\Yii::$app->request->isAjax && !empty($text = \Yii::$app->request->post("text"))) {
-        \Yii::$app->response->format = Response::FORMAT_JSON;
+        //\Yii::$app->response->format = Response::FORMAT_JSON;
         $message = new Message();
         $message->message = $text;
         $message->mark = false;
